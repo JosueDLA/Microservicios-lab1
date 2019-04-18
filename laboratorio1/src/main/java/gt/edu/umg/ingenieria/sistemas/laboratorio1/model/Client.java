@@ -79,6 +79,4 @@ public class Client implements Serializable {
         this.address = address;
     }
     
-    
-    
 }
