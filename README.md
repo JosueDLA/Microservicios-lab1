@@ -6,22 +6,28 @@ Carne: 1290-15-11788
 
 Laboratorio #1 del curso de Ingenieria de Software
 
-
-
 ## RESTful Services:
-- Create new Client
-- Find All Clients
-- Find Client By Nit
-- Find By First and/or Last Name
-- Update Client
-- Report Clients
+- Create new client
+  - Only adults can register
+  - NIT should have maximum 10 characters and only digits
+  - First and last name must start with uppercase, the rest must be lowercase
+- Find all clients
+- Find client by NIT
+- Find by first and/or Last name
+  - '*' is a wildcard
+- Update client
+  - Update a client
+  - Update only the NIT of a client
+  - Update the NIT, first and last name of a client
+- Customer report
 
 ## EndPoints
-- localhost:9001/clientes/creaCliente
-- localhost:9001/clientes/buscarTodos
-- localhost:9001/clientes/buscarPorNit?nit=12345
-- localhost:9001/clientes/buscarPorNombreApellido?nombre=*perez
-- localhost:9001/clientes/editarCliente/1
-- localhost:9001/clientes/editarCliente/1/12345
-- localhost:9001/clientes/editarCliente/1/12345/Juan/Perez
-- localhost:9001/clientes/generarReporteClientes
+- https://localhost:9001/clientes/creaCliente
+- https://localhost:9001/clientes/buscarTodos
+- https://localhost:9001/clientes/buscarPorNit?nit=12345
+- https://localhost:9001/clientes/buscarPorNombreApellido?nombre=*perez
+- https://localhost:9001/clientes/editarCliente/1
+- https://localhost:9001/clientes/editarCliente/1/12345
+- https://localhost:9001/clientes/editarCliente/1/12345/Juan/Perez
+- https://localhost:9001/clientes/generarReporteClientes
+
